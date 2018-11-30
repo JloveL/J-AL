@@ -54,7 +54,6 @@
 
     <script>
         function timer() {
-            <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=298 height=52 src="//music.163.com/outchain/player?type=2&id=740558&auto=1&height=0"></iframe>
             var start = new Date(2018,10,29); // 20181129
             var ct = Date.now()
             var t = ct - start;
@@ -78,6 +77,8 @@
             document.getElementById('m').innerHTML = m;
             document.getElementById('s').innerHTML = s;
             document.getElementById('l').innerHTML = l;
+            <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=298 height=52 src="//music.163.com/outchain/player?type=2&id=740558&auto=1&height=32"></iframe>
+ 
         }
         timer();
         setInterval(timer, 1000);
