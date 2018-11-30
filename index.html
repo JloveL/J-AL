@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
@@ -39,6 +38,7 @@
         .timer b {
             color: rgb(253, 99, 125);
         }
+        
     </style>
 </head>
 <body>
@@ -53,6 +53,9 @@
     </div>
 
     <script>
+        function music(){
+               <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=298 height=52 src="//music.163.com/outchain/player?type=2&id=740558&auto=1&height=32"></iframe>
+        }
         function timer() {
             var start = new Date(2018,10,29); // 20181129
             var ct = Date.now()
@@ -79,6 +82,7 @@
             document.getElementById('l').innerHTML = l;
         }
         timer();
+        music();
         setInterval(timer, 1000);    
     </script>
 </body>
