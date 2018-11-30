@@ -46,7 +46,7 @@
     <div class="content">
         <h2>爱ちゃん，我们已经在一起</h2>
         <div class="timer">
-            <b id="d"></b> Days <b id="h"></b> Hours <b id="m"></b> Minutes <b id="s"></b> Seconds
+            <b id="d"></b> 天 <b id="h"></b> 时 <b id="m"></b> 分 <b id="s"></b> 秒 <b id="l"></b> 
         </div>
         <div class = "name">
             Yours J.
@@ -70,10 +70,13 @@
             if (s < 10) {
                 s = "0" + s;
             }
+            var l = ~~(t % 1000);
+                l = "0" + l;
             document.getElementById('d').innerHTML = ~~(t / 1000 / 60 / 60 / 24);
             document.getElementById('h').innerHTML = h;
             document.getElementById('m').innerHTML = m;
             document.getElementById('s').innerHTML = s;
+            document.getElementById('j').innerHTML = l;
         }
         timer();
         setInterval(timer, 1000);
