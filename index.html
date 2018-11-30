@@ -46,13 +46,13 @@
     <div class="content">
         <h2>爱ちゃん，我们已经在一起</h2>
         <div class="timer">
-            <b id="d"></b> 天 <b id="h"></b> 小时 <b id="m"></b> 分 <b id="s"></b> 秒
+            <b id="d"></b> 天 <b id="h"></b> 时 <b id="m"></b> 分 <b id="s"></b> 秒
         </div>
     </div>
 
     <script>
         function timer() {
-            var start = new Date(2018,10,29); // 20181129
+            var start = new Date(2018,11,29); // 20181129
             var t = new Date() - start;
             var h = ~~(t / 1000 / 60 / 60 % 24);
             if (h < 10) {
